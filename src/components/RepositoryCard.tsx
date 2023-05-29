@@ -5,7 +5,7 @@ import moment from "moment";
 import '../styles/RepositoryList.scss';
 function RepositoryCard() {
   const { id } = useParams();
-  const { loading, error, data } = useQuery(
+  const { data } = useQuery(
     getFullRepositoryInfoGql(id || "")
   );
   console.log(data, id)
@@ -31,7 +31,7 @@ function RepositoryCard() {
           <span>Languages used in the repository: </span>
           <div>
             {(data?.node.languages.edges || []).map((item:any, key:any) => (
-              <ul>
+              <ul key={key}>
                 <li>{item.node.name}</li>
               </ul>
             ))}

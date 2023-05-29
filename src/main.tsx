@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.tsx'
-import { ApolloClient, InMemoryCache, ApolloProvider, gql, HttpLink, ApolloLink } from '@apollo/client';
+import { ApolloClient, InMemoryCache, ApolloProvider, HttpLink, ApolloLink } from '@apollo/client';
 import { store } from './redux/store.tsx'
 // import { GET_CURRENT_USER_REPOSITORIES } from './API/GetCurrentUserRepositories.ts';
 import { Provider } from 'react-redux'
