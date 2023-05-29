@@ -31,7 +31,6 @@ function Home() {
 
   useEffect(() => {
     const searchValueLocal = localStorage.getItem('searchValueLocal')
-    console.log("get the local", searchValueLocal )
     if (searchValueLocal) {
       dispatch(setSearchValueRedux(searchValueLocal))
     }
@@ -54,7 +53,6 @@ function Home() {
         setRepositories(currentUserData.viewer.repositories.nodes);
         setTotalPages(Math.ceil(currentUserData.viewer.repositories.totalCount / perPage));
       } else {
-        console.log("searchData:", searchData)
         setRepositories(searchData?.search.nodes || []);
         setTotalPages(Math.ceil(searchData?.search.repositoryCount / perPage) || 0);
       }

@@ -15,9 +15,7 @@ function SearchBar() {
     setSearchValue(event.target.value);
     dispatch(setSearchValueRedux(event.target.value));
     localStorage.setItem('searchValueLocal', (event.target.value));
-    console.log("local", localStorage)
   };
-  console.log(searchValue)
   return (
     <div 
     className="search-bar"

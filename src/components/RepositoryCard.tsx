@@ -8,7 +8,6 @@ function RepositoryCard() {
   const { data } = useQuery(
     getFullRepositoryInfoGql(id || "")
   );
-  console.log(data, id)
   return (
     <div className="center-card">
       <div className="repositories-cards">

@@ -7,6 +7,7 @@ export default ({ mode }) => {
       plugins: [react()],
       define: {
         'process.env.VITE_TOKEN': JSON.stringify(process.env.VITE_TOKEN)
-      }
+      },
+      base: "/github-repositories/" 
     });
 };

@@ -12,7 +12,6 @@ export const pageSlice = createSlice({
   initialState,
   reducers: {
     setPageNumberRedux: (state, action) => {
-      console.log(action.payload)
       return {
         ...state, 
         value: action.payload

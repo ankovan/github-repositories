@@ -22,14 +22,6 @@ const client = new ApolloClient({
   cache: new InMemoryCache(),
 });
 
-// client
-//   .query({
-//     query: GET_CURRENT_USER_REPOSITORIES,
-//   })
-//   .then((result) => console.log(result));
-
-
-
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
     <Provider store={store}>
