@@ -1,0 +1,14 @@
+@import "./variables";
+@import "./mixins";
+.search-bar {
+  @include center-vertical;
+  margin-top: 2rem;
+  .search-bar-input {
+    padding: 1rem;
+    border-radius: 0.4em;
+    background-color: $secondary-color;
+    color: $text-color;
+    border: none;
+    width: 25%;
+  }
+}

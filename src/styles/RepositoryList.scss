@@ -1,0 +1,29 @@
+@import "./variables";
+@import "./mixins";
+.repositories-list {
+  @include center-vertical-list;
+}
+.repositories-cards {
+  background-color: $secondary-color;
+  margin-top: 2rem;
+  width: 50%;
+  border-radius: $border-radius;
+  padding: 1rem;
+  .card-text {
+    margin-top: 0.4rem;
+  }
+  .repository-name {
+    font-weight: $text-bold;
+  }
+}
+.center-card {
+  @include center-vertical
+}
+.avatar {
+  width: 6rem;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+.username {
+  margin-left: 1rem;
+}

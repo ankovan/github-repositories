@@ -1,0 +1,9 @@
+@mixin center-vertical-list {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+@mixin center-vertical {
+  display: flex;
+  justify-content: center;
+}

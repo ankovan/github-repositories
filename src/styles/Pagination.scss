@@ -1,0 +1,21 @@
+@import "./variables";
+@import "./mixins";
+.pagination-container {
+  @include center-vertical;
+  margin-top: 1rem;
+  .pagination-buttons {
+    background-color: $secondary-color;
+    color: $text-color;
+    border: none;
+    padding: 0.6rem;
+    border-radius: $border-radius;
+    margin-right: 0.4rem;
+    margin-bottom: 0.4rem;
+    cursor: pointer;
+    &:disabled {
+      background-color: lighten($color: $secondary-color, $amount: 10);
+      color: lighten($color: $text-color, $amount: 4);
+      cursor: not-allowed;
+    }
+  }
+}

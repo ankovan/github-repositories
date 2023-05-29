@@ -1,0 +1,5 @@
+@import "./variables";
+@import "./mixins";
+.loading {
+  @include center-vertical;
+}

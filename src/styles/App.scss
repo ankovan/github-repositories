@@ -1,0 +1,7 @@
+@import "./variables";
+body {
+  margin: 0;
+  background-color: $primary-color;
+  color: $text-color;
+  font-family: 'Courier New', Courier, monospace;
+}
