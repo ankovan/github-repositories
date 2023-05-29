@@ -6,11 +6,11 @@ import RepositoryCardPage from './pages/RepositoryCardPage';
 
 export const router = createBrowserRouter([
   {
-    path:"/",
+    path:"/github-repositories/",
     element: <Home/>,
   },
   {
-    path:"/repository/:id",
+    path:"/github-repositories/repository/:id",
     element: <RepositoryCardPage/>
   },
   // {
